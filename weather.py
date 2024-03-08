@@ -10,8 +10,9 @@ response = requests.get(
     params={
         "q": city,
         "appid": api_key,
+        "units": "metric"
                 }
 )
 
 weather = response.json()
-print(weather["main"]["temp"])
+print("The temperature is:", weather["main"]["temp"])
