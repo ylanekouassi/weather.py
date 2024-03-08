@@ -10,3 +10,6 @@ response = requests.get(
         "appid": api_key,
                 }
 )
+
+weather = response.json()
+print(weather)
